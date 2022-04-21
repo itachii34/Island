@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <title>Islands</title>
+    </head>
+    <body>
+        <!--====== Header ======-->
+		<header>
+			<nav id="navbar-header" class="navbar navbar-light">
+				<div class="container-fluid">
+					<div class="section-container">
+						<!--====== Desktop Header ======-->
+						<div class="headerBar">
+							<div class="col-brand">
+								<a href="#">Logo</a>
+							</div>
+							<div class="col-menu">
+								<ul class="m-0 p-0 nav nav-pills">
+									<li class="nav-item"><a class="nav-link" href="#scrollspyArt">Art</a></li>
+									<li class="nav-item"><a class="nav-link" href="#scrollspyRoadmap">Roadmap</a></li>
+									<li class="nav-item"><a class="nav-link" href="#scrollspyTeam">Team</a></li>
+									<li class="nav-item"><a class="nav-link" href="#scrollspyAbout">About</a></li>
+									<li class="nav-item"><a class="nav-link" href="#scrollspyFaq">Faq</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Connect Wallet</a></li>
+								</ul>
+							</div>
+						</div>
+						<!--====== Offcanvas Header ======-->
+						<div class="OffcanvasHeader">
+							<nav class="navbar navbar-light p-0">
+							  <div class="container-fluid p-0 m-0">
+								<div class="headerBar d-flex">
+									<div class="col-brand">
+										<a href="#">Logo</a>
+									</div>
+									<div class="col-menu d-flex align-items-center">
+										<a class="offcanvasWallet" href="#">Connect Wallet</a>
+										<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+										  <i class="bi bi-list"></i>
+										</button>
+									</div>
+								</div>			
+								<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+								  <div class="offcanvas-header border-bottom bg-dark">
+									<h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+									<button type="button" class="text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+								  </div>
+								  <div class="offcanvas-body bg-dark">
+									<ul class="m-0 p-0 nav nav-pills d-block">
+										<li class="nav-item"><a class="nav-link p-0" href="#scrollspyArt">Art</a></li>
+										<li class="nav-item"><a class="nav-link p-0 " href="#scrollspyRoadmap">Roadmap</a></li>
+										<li class="nav-item"><a class="nav-link p-0" href="#scrollspyTeam">Team</a></li>
+										<li class="nav-item"><a class="nav-link p-0" href="#scrollspyAbout">About</a></li>
+										<li class="nav-item"><a class="nav-link p-0" href="#scrollspyFaq">Faq</a></li>
+									</ul>
+								  </div>
+								</div>
+							  </div>
+							</nav>	
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+        <!--====== Hero ======-->
+        <section class="hero">
+            <div class="swiper-container gallery-top autoHeight:true">
+                <div class="swiper-wrapper">
+                    <div class="islands swiper-slide">
+                        <img src="assets/img/borabora.jpg" alt="" class="islands__bg">
+						<div class="container-fluid">
+						    <div class="islands__container section-container">
+								<div class="islands__data">
+									<h1 class="islands__title">The Borneo Incident</h1>
+									<p class="islands__description">This is a super descriptive description describing why you should buy. Also should there be a option to mint multiple?</p>
+									<!-- <a class="islands__button" href="#">Mint Now! Do it</a> -->
+									<div id="mint"></div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                    <div class="islands swiper-slide">
+                        <img src="assets/img/bali.jpg" alt="" class="islands__bg">
+						<div class="container-fluid">
+							<div class="islands__container section-container">
+								<div class="islands__data">
+									<h2 class="islands__subtitle">Road Map</h2>
+									<h1 class="islands__title">Look Here</h1>
+									<p class="islands__description">Some things we wanted to tell you about</p>
+									<a  class="islands__button" href="#scrollspyRoadmap">Check it out</a>
+								</div>
+							</div>
+						</div>
+                    </div>
+                    <div class="islands swiper-slide">
+                        <img src="assets/img/palawan.jpg" alt="" class="islands__bg">
+						<div class="container-fluid">
+					        <div class="islands__container section-container">
+								<div class="islands__data">
+									<!-- <h2 class="islands__subtitle">What Happened</h2> -->
+									<h1 class="islands__title">A tale of...</h1>
+									<!-- <p class="islands__description">What happened in Borneo didn't stay in Borneo, it became an NFT</p> -->
+									<a  class="islands__button" href="#scrollspyAbout">Read On</a>
+								</div> 
+							</div>	
+						</div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls gallery-thumbs">
+                <div class="controls__container swiper-wrapper">
+                    <img src="assets/img/borabora.jpg" alt="" class="controls__img swiper-slide">
+                    <img src="assets/img/bali.jpg" alt="" class="controls__img swiper-slide">
+                    <img src="assets/img/palawan.jpg" alt="" class="controls__img swiper-slide">
+                </div>
+            </div>
+        </section>
+		<!--====== Scroll Body ======-->
+		<section>
+			<div data-bs-spy="scroll" data-bs-target="#navbar-header" data-bs-offset="0" class="scrollspy-header" tabindex="0">
+				<div class="py-5"></div>
+				  <div id="scrollspyArt">
+					<div class="areaHeader">
+						<h5>Art</h5>
+					</div>
+					<div class="container-fluid">
+						<div class="section-container">
+							<div class="py-4"></div>
+							<!--====== Art Gallery ======-->
+							<div class="artGallery">
+								<div class="owl-carousel owl-theme">
+									<div class="item">
+										<img src="assets/img/slider/3.png" alt="" />
+									</div>
+									<div class="item">
+										<img src="assets/img/slider/4.png" alt="" />
+									</div>
+									<div class="item">
+										<img src="assets/img/slider/5.png" alt="" />
+									</div>
+									<div class="item">
+										<img src="assets/img/slider/6.png" alt="" />
+									</div>
+									<div class="item">
+										<img src="assets/img/slider/7.png" alt="" />
+									</div>
+									<div class="item">
+										<img src="assets/img/slider/8.png" alt="" />
+									</div>
+									<div class="item">
+										<img src="assets/img/slider/9.png" alt="" />
+									</div>
+									<div class="item">
+										<img src="assets/img/slider/10.png" alt="" />
+									</div>
+									<div class="item">
+										<img src="assets/img/slider/11.png" alt="" />
+									</div>
+									<div class="item">
+										<img src="assets/img/slider/12.png" alt="" />
+									</div>
+									<div class="item">
+										<img src="assets/img/slider/13.png" alt="" />
+									</div>
+								</div>		
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="py-4"></div>
+				  <div class="py-2"></div>
+				  <div id="scrollspyRoadmap">
+					  <div class="areaHeader">
+						<h5>Roadmap</h5>
+					  </div>	
+					  <div class="py-4"></div>
+					  <div class="container m-auto">
+							<div class="roadmap-yakuza">
+								<!--====== Desktop Roadmap ======-->
+								<div class="desktop___roadmap">
+									<div class="liner--roadmap"></div>
+									<div class="roadmap-items-container">
+										<div class="roadmap----item">
+											<h2 class="h1 roadmap--item-title">1</h2>
+											<span class="roadmap--point"></span>
+											<h4><b class="f-akira h5 title ">Genesis Mint :</b><br><br><span class="new-line">Our first collection released <br />
+										   Holding a Genesis will guarantee you a free mint to all coming collections. <br />
+										   This Nft will be the only All Access to the Yakuza Clan Eco System and benefits.</span>
+											</h4>
+										</div>
+										
+										<div class="roadmap----item">
+											<h2 class="h1 roadmap--item-title">2</h2>
+											<span class="roadmap--point"></span>
+											<h4><b class="f-akira h5 title "> Donation: </b><br><br><span class="new-line">We will help our littles brothers and sisters from the  “Poussieres de Vie.”  ( <a href="#">www.lorem.org/en/who-we-are/</a> ) This charity helps struggling children, young adults, and ethnic minorities in the Central Highlands of Vietnam.  Our artist (Subyone) has a soft spot in his heart for this charity as he has done volunteer work for the organization. </span>
+											</h4>
+										</div>
+
+										<div class="roadmap----item">
+											<h2 class="h1 roadmap--item-title">3</h2>
+											<span class="roadmap--point"></span>
+											<h4><b class="f-akira h5 title ">Unique Merch: </b><br><br><span class="new-line">As Genesis holder, you will be able to claim your very own Katana and others unique items. </span>
+											</h4>
+										</div>
+
+										<div class="roadmap----item">
+											<h2 class="h1 roadmap--item-title">4</h2>
+											<span class="roadmap--point"></span>
+											<h4><b class="f-akira h5 title "> New territory: </b><br><br><span class="new-line">2nd collection released, free mint for Genesis holders. <br />
+											We believe in the future of Cryptocurrencies and the Blockchain technology, we want the Clan to expand to others blockchain and to do so, we will launch this time on a promising blockchain. <br />
+											We want our members to be ahead on crypto by investing into others chains. DIVERSIFY. </span>
+											</h4>
+										</div>
+
+										<div class="roadmap----item">
+											<h2 class="h1 roadmap--item-title">5</h2>
+											<span class="roadmap--point"></span>
+											<h4><b class="f-akira h5 title"> Yakuza DAO: </b><br><br><span class="new-line"> We believe in the future of Cryptocurrencies and the Blockchain technology, we want the Clan to expand to others blockchain and to do so, we will </span>
+											</h4>
+										</div>
+
+										<div class="roadmap----item mb-4">
+											<h2 class="h1 roadmap--item-title">6</h2>
+											<span class="roadmap--point"></span>
+											<h4><b class="f-akira h5 title "> Yakuza DAO: </b><br><br><span class="new-line">Game, Tokens, Metaverse, we will decide together as Clan, as Family. </span>
+											</h4>
+										</div>
+									</div>
+								</div>
+								<!--====== Mobile Roadmap ======-->
+								<div class="mobile--roadmap">
+									<div class="roadmap-card">
+										<h1><span>1</span> - Genesis Mint :</h1>
+										<div class="py-1"></div>
+										<p>
+										   Our first collection released <br />
+										   Holding a Genesis will guarantee you a free mint to all coming collections. <br />
+										   This Nft will be the only All Access to the Yakuza Clan Eco System and benefits.
+										</p>
+									</div>					
+									<div class="roadmap-card">
+										<h1><span>2</span> - Donation: </h1>
+										<div class="py-1"></div>
+										<p>
+										   We will help our littles brothers and sisters from the  “Poussieres de Vie.”  ( <a href="#">www.lorem.org/en/who-we-are/</a> ) This charity helps struggling children, young adults, and ethnic minorities in the Central Highlands of Vietnam.  Our artist (Subyone) has a soft spot in his heart for this charity as he has done volunteer work for the organization. 
+										</p>
+									</div>						
+									<div class="roadmap-card">
+										<h1><span>3</span> - Unique Merch :</h1>
+										<div class="py-1"></div>
+										<p>
+											As Genesis holder, you will be able to claim your very own Katana and others unique items.
+										</p>
+									</div>						
+									<div class="roadmap-card">
+										<h1><span>4</span> - New territory :</h1>
+										<div class="py-1"></div>
+										<p>
+											2nd collection released, free mint for Genesis holders. <br />
+											We believe in the future of Cryptocurrencies and the Blockchain technology, we want the Clan to expand to others blockchain and to do so, we will launch this time on a promising blockchain. <br />
+											We want our members to be ahead on crypto by investing into others chains. DIVERSIFY.
+										</p>
+									</div>											
+									<div class="roadmap-card">
+										<h1><span>5</span> - Yakuza DAO</h1>
+										<div class="py-1"></div>
+										<p>
+
+										</p>
+									</div>											
+									<div class="roadmap-card">
+										<h1><span>6</span> - The Future</h1>
+										<div class="py-1"></div>
+										<p>
+										   Game, Tokens, Metaverse, we will decide together as Clan, as Family.
+										</p>
+									</div>
+								</div>
+							</div>	
+					  </div>
+				  </div>
+				  <div class="py-4"></div>
+				  <div class="py-2"></div>
+				  <div id="scrollspyTeam">
+				      <!--====== Team ======-->
+					  <!-- Henry Golding -  Lead Actor
+						Carmen Soo- Actress
+						Daphne Iking- Actress
+						Dennis Lau- Actor
+						Fay Hokulani- Actress
+						Mitch Ross - Actor
+						Robert Gilliland- Actor
+						Hansen Lee - Actor
+						Michael Helfman - Actor, Producer, Director, Writer
+						Robert Ong-  Producer, Director of Photography -->
+					  <div class="areaHeader">
+						<h5>Team</h5>
+					  </div>				
+					  <div class="container-fluid">
+						  <div class="py-4"></div>
+						  <div class="section-container">
+							  <div class="teamArea">
+							  	  <div class="teamCard">
+								  	<img src="assets/img/team/Carmen Soo.jpg"" alt="" />
+									 <h3>Carmen Soo</h3>
+									 <h6>Actress</h6>
+									<ul class="d-flex justify-content-center">
+										<li><a href="#"><i class="bi bi-envelope-fill"></i></a></li>  
+										<li><a href="#"><i class="bi bi-twitter"></i></a></li>  
+									</ul>
+								  </div>
+							  	  <div class="teamCard">
+								  	<img src="assets/img/team/Daphne_Iking.jpg" alt="" />
+									 <h3>Daphne Iking</h3>
+									 <h6>Actress</h6>
+									<ul class="d-flex justify-content-center">
+										<li><a href="#"><i class="bi bi-envelope-fill"></i></a></li>  
+										<li><a href="#"><i class="bi bi-twitter"></i></a></li>  
+									</ul>
+								  </div>
+							  	  <div class="teamCard">
+								  	<img src="assets/img/team/Dennis Lau.jpg" alt="" />
+									 <h3>Dennis Lau</h3>
+									 <h6>Actor</h6>
+									<ul class="d-flex justify-content-center">
+										<li><a href="#"><i class="bi bi-envelope-fill"></i></a></li>  
+										<li><a href="#"><i class="bi bi-twitter"></i></a></li>  
+									</ul>
+								  </div>
+							  	  <div class="teamCard">
+								  	<img src="assets/img/team/Fay Hokulani.jpg" alt="" />
+									 <h3>Fay Hokulani</h3>
+									 <h6>Actress</h6>
+									<ul class="d-flex justify-content-center">
+										<li><a href="#"><i class="bi bi-envelope-fill"></i></a></li>  
+										<li><a href="#"><i class="bi bi-twitter"></i></a></li>  
+									</ul>
+								  </div>
+								  <div class="teamCard">
+									<img src="assets/img/team/Hansen Lee.jpg" alt="" />
+								   <h3>Hansen Lee</h3>
+								   <h6>Actor</h6>
+								  <ul class="d-flex justify-content-center">
+									  <li><a href="#"><i class="bi bi-envelope-fill"></i></a></li>  
+									  <li><a href="#"><i class="bi bi-twitter"></i></a></li>  
+								  </ul>
+								</div>
+								<div class="teamCard">
+									<img src="assets/img/team/Henry Golding.png" alt="" />
+								   <h3>Henry Golding</h3>
+								   <h6>Lead Actor</h6>
+								  <ul class="d-flex justify-content-center">
+									  <li><a href="#"><i class="bi bi-envelope-fill"></i></a></li>  
+									  <li><a href="#"><i class="bi bi-twitter"></i></a></li>  
+								  </ul>
+								</div>
+								<div class="teamCard">
+									<img src="assets/img/team/Michael Helfman.png" alt="" />
+								   <h3>Michael Helfman</h3>
+								   <h6>Actor, Producer, Director, Writer</h6>
+								  <ul class="d-flex justify-content-center">
+									  <li><a href="#"><i class="bi bi-envelope-fill"></i></a></li>  
+									  <li><a href="#"><i class="bi bi-twitter"></i></a></li>  
+								  </ul>
+								</div>
+								<div class="teamCard">
+									<img src="assets/img/team/Mitch Ross.png" alt="" />
+								   <h3>Mitch Ross</h3>
+								   <h6>Actor</h6>
+								  <ul class="d-flex justify-content-center">
+									  <li><a href="#"><i class="bi bi-envelope-fill"></i></a></li>  
+									  <li><a href="#"><i class="bi bi-twitter"></i></a></li>  
+								  </ul>
+								</div>
+								<div class="teamCard">
+									<img src="assets/img/team/Robert Gilliland.png" alt="" />
+								   <h3>Robert Gilliland</h3>
+								   <h6>Actor</h6>
+								  <ul class="d-flex justify-content-center">
+									  <li><a href="#"><i class="bi bi-envelope-fill"></i></a></li>  
+									  <li><a href="#"><i class="bi bi-twitter"></i></a></li>  
+								  </ul>
+								</div>
+								<div class="teamCard">
+									<img src="assets/img/team/Robert Ong.jpg" alt="" />
+								   <h3>Robert Ong</h3>
+								   <h6>Producer, Director of Photography</h6>
+								  <ul class="d-flex justify-content-center">
+									  <li><a href="#"><i class="bi bi-envelope-fill"></i></a></li>  
+									  <li><a href="#"><i class="bi bi-twitter"></i></a></li>  
+								  </ul>
+								</div>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+				  <div class="py-4"></div>
+				  <div class="py-2"></div>
+				  <div id="scrollspyAbout">
+					  <!--====== About Us ======-->
+					  <div class="areaHeader">
+						<h5>About Us</h5>
+					  </div>				
+					  <div class="py-4"></div>
+					  <div class="aboutUs">
+						  <div class="container-fluid">
+							  <div class="section-container">
+								  <div class="row">
+									  <div class="col-lg-4 col-md-5 col-sm-12">
+									  	<img src="assets/img/slider/1.png" alt="" />
+									  </div>
+									  <div class="col-lg-8 col-md-7 col-sm-12">
+									  	<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit fugiat.</h1>
+									  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis non, odio doloremque? Distinctio laborum repellendus quae totam dolorum vitae atque eos nobis laboriosam similique eaque sit nemo cumque, odio perferendis inventore quis quam. Nulla ratione iure, sequi non, vero dolorum modi nesciunt error qui delectus, fuga. Expedita corrupti ut, ipsa voluptas doloremque, ducimus necessitatibus voluptate quod laborum voluptatibus hic cum minima at sed ipsam odio, aliquid ipsum magni consequatur asperiores omnis tenetur. Libero, labore, magni. Excepturi accusantium qui distinctio. Fugit eveniet perspiciatis cumque distinctio quo eum consequatur sapiente aliquid id nemo voluptas laudantium qui incidunt, fuga debitis veniam, quis earum illo voluptate rerum ad atque accusamus. Ea aliquam eaque laudantium, praesentium magni accusantium enim magnam amet omnis, saepe iusto nobis veritatis sed repudiandae obcaecati. Sit est error quasi perspiciatis nisi harum et a ipsam laborum eos. Ipsa tenetur obcaecati, quasi velit animi beatae reprehenderit, neque quis veniam expedita minima similique recusandae iusto nihil cum officia quaerat, id nulla sed consequatur, ipsam? At ea eius eligendi repudiandae repellendus quam consequuntur, minima tempora sunt, ipsam fugit magnam impedit, eaque expedita fugiat! Porro aliquid iure ipsum. Incidunt, officia blanditiis architecto doloribus ea, beatae excepturi? Vel facere ratione ipsam labore facilis, nesciunt eaque sed?</p>
+									  </div>
+								  </div>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+				  <div class="py-4"></div>
+				  <div class="py-2"></div>
+				  <div id="scrollspyFaq">
+					  <!--====== Faq ======-->
+					  <div class="areaHeader">
+						<h5>Faq</h5>
+				      </div>					
+					  <div class="py-4"></div>
+					  <div class="faq">
+						  <div class="container-fluid">
+							  <div class="section-container">
+								  <div class="accordion accordion-flush" id="accordionFlush">
+								  <div class="row">
+									  <div class="col-lg-6 col-md-12">
+										
+											
+											
+											
+										  <div class="accordion-item">
+											<h2 class="accordion-header" id="flush-headingOne">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+												Accordion Item #1
+											  </button>
+											</h2>
+											<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+											  <div class="accordion-body">
+												  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam necessitatibus adipisci officiis delectus explicabo, eius nostrum est dignissimos, ex veritatis laborum tenetur quia impedit quo mollitia ad vero sit obcaecati optio fugit sint atque! Ad recusandae possimus, at natus reprehenderit tempora molestias. Architecto sit ad in, quos minima, enim. Saepe voluptate corporis, soluta vitae officiis quasi nisi, nulla ducimus molestias, sed natus. Unde incidunt libero fugiat deserunt veritatis? Cumque quam autem inventore voluptatem error in est nisi expedita perferendis hic ipsa, deserunt modi nemo optio omnis ipsam ullam quibusdam praesentium voluptas, ab eveniet quas iure distinctio illo. Unde, soluta, natus.</p>
+											  </div>
+											</div>
+										  </div>
+										  <div class="accordion-item">
+											<h2 class="accordion-header" id="flush-headingTwo">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+												Accordion Item #2
+											  </button>
+											</h2>
+											<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlush">
+											  <div class="accordion-body">
+												  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam necessitatibus adipisci officiis delectus explicabo, eius nostrum est dignissimos, ex veritatis laborum tenetur quia impedit quo mollitia ad vero sit obcaecati optio fugit sint atque! Ad recusandae possimus, at natus reprehenderit tempora molestias. Architecto sit ad in, quos minima, enim. Saepe voluptate corporis, soluta vitae officiis quasi nisi, nulla ducimus molestias, sed natus. Unde incidunt libero fugiat deserunt veritatis? Cumque quam autem inventore voluptatem error in est nisi expedita perferendis hic ipsa, deserunt modi nemo optio omnis ipsam ullam quibusdam praesentium voluptas, ab eveniet quas iure distinctio illo. Unde, soluta, natus.</p>
+											  </div>
+											</div>
+										  </div>
+										  <div class="accordion-item">
+											<h2 class="accordion-header" id="flush-headingThree">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+												Accordion Item #3
+											  </button>
+											</h2>
+											<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+											  <div class="accordion-body">
+												  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam necessitatibus adipisci officiis delectus explicabo, eius nostrum est dignissimos, ex veritatis laborum tenetur quia impedit quo mollitia ad vero sit obcaecati optio fugit sint atque! Ad recusandae possimus, at natus reprehenderit tempora molestias. Architecto sit ad in, quos minima, enim. Saepe voluptate corporis, soluta vitae officiis quasi nisi, nulla ducimus molestias, sed natus. Unde incidunt libero fugiat deserunt veritatis? Cumque quam autem inventore voluptatem error in est nisi expedita perferendis hic ipsa, deserunt modi nemo optio omnis ipsam ullam quibusdam praesentium voluptas, ab eveniet quas iure distinctio illo. Unde, soluta, natus.</p>
+											  </div>
+											</div>
+										  </div>
+											
+											
+											
+											
+											
+										
+									  </div>
+									  <div class="col-lg-6 col-md-12">
+								
+											
+											
+											
+										  <div class="accordion-item">
+											<h2 class="accordion-header" id="flush-headingOne1">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
+												Accordion Item #1
+											  </button>
+											</h2>
+											<div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne1" data-bs-parent="#accordionFlush">
+											  <div class="accordion-body">
+												  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam necessitatibus adipisci officiis delectus explicabo, eius nostrum est dignissimos, ex veritatis laborum tenetur quia impedit quo mollitia ad vero sit obcaecati optio fugit sint atque! Ad recusandae possimus, at natus reprehenderit tempora molestias. Architecto sit ad in, quos minima, enim. Saepe voluptate corporis, soluta vitae officiis quasi nisi, nulla ducimus molestias, sed natus. Unde incidunt libero fugiat deserunt veritatis? Cumque quam autem inventore voluptatem error in est nisi expedita perferendis hic ipsa, deserunt modi nemo optio omnis ipsam ullam quibusdam praesentium voluptas, ab eveniet quas iure distinctio illo. Unde, soluta, natus.</p>
+											  </div>
+											</div>
+										  </div>
+										  <div class="accordion-item">
+											<h2 class="accordion-header" id="flush-headingTwo2">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo2" aria-expanded="false" aria-controls="flush-collapseTwo2">
+												Accordion Item #2
+											  </button>
+											</h2>
+											<div id="flush-collapseTwo2" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo2" data-bs-parent="#accordionFlush">
+											  <div class="accordion-body">
+												  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam necessitatibus adipisci officiis delectus explicabo, eius nostrum est dignissimos, ex veritatis laborum tenetur quia impedit quo mollitia ad vero sit obcaecati optio fugit sint atque! Ad recusandae possimus, at natus reprehenderit tempora molestias. Architecto sit ad in, quos minima, enim. Saepe voluptate corporis, soluta vitae officiis quasi nisi, nulla ducimus molestias, sed natus. Unde incidunt libero fugiat deserunt veritatis? Cumque quam autem inventore voluptatem error in est nisi expedita perferendis hic ipsa, deserunt modi nemo optio omnis ipsam ullam quibusdam praesentium voluptas, ab eveniet quas iure distinctio illo. Unde, soluta, natus.</p>
+											  </div>
+											</div>
+										  </div>
+										  <div class="accordion-item">
+											<h2 class="accordion-header" id="flush-headingThree3">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree3" aria-expanded="false" aria-controls="flush-collapseThree3">
+												Accordion Item #3
+											  </button>
+											</h2>
+											<div id="flush-collapseThree3" class="accordion-collapse collapse" aria-labelledby="flush-headingThree3" data-bs-parent="#accordionFlush">
+											  <div class="accordion-body">
+												  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam necessitatibus adipisci officiis delectus explicabo, eius nostrum est dignissimos, ex veritatis laborum tenetur quia impedit quo mollitia ad vero sit obcaecati optio fugit sint atque! Ad recusandae possimus, at natus reprehenderit tempora molestias. Architecto sit ad in, quos minima, enim. Saepe voluptate corporis, soluta vitae officiis quasi nisi, nulla ducimus molestias, sed natus. Unde incidunt libero fugiat deserunt veritatis? Cumque quam autem inventore voluptatem error in est nisi expedita perferendis hic ipsa, deserunt modi nemo optio omnis ipsam ullam quibusdam praesentium voluptas, ab eveniet quas iure distinctio illo. Unde, soluta, natus.</p>
+											  </div>
+											</div>
+										  </div>
+											
+											
+											
+											
+											
+											
+										</div>	
+									  </div>
+								  </div>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+			</div>		
+		</section>
+		<!--====== Footer ======-->
+		<footer>
+			<div class="py-4"></div>
+			<div class="py-2"></div>
+			<p>© 2021 CompanyName all rights researved</p>
+		</footer>
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
